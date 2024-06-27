@@ -1,10 +1,12 @@
-package Collection;
+package Collection.Map;
+
+import Collection.Coffee;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MenuMap {
-    private Map<Integer,Coffee> map;
+    private Map<Integer, Coffee> map;
 
 //    public MenuMap(Map<Integer, Coffee> map) {
 //        this.map = new HashMap<>();

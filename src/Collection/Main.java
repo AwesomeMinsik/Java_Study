@@ -1,5 +1,9 @@
 package Collection;
 
+import Collection.List.MenuList;
+import Collection.Map.MenuMap;
+import Collection.Set.MenuSet;
+
 import java.util.*;
 
 public class Main {

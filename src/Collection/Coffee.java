@@ -1,6 +1,6 @@
 package Collection;
 
-public class Coffee {
+public class Coffee implements Comparable<Coffee>{
 
     private String name;
     private String taste;
@@ -20,4 +20,21 @@ public class Coffee {
                 ", price=" + price +
                 '}';
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+
+
+//    @Override
+//    public int compareTo(Object o) {
+//        return 0;
+//    }
+    @Override
+    public int compareTo(Coffee other) {
+        // price를 기준으로 정렬
+        return Integer.compare(this.price, other.price);
+    }
+
 }

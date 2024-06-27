@@ -1,4 +1,6 @@
-package Collection;
+package Collection.Set;
+import Collection.Coffee;
+
 import java.util.HashSet;
 import java.util.Set;
 
