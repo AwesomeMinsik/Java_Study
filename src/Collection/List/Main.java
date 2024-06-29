@@ -2,10 +2,7 @@ package Collection.List;
 
 import Collection.Coffee;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class Main {
@@ -19,6 +16,8 @@ public class Main {
         list.add(coffee);
         list.add(coffee1);
         list.add(coffee2);
+
+
 
         //데이터 순회방법
 
@@ -57,6 +56,7 @@ public class Main {
         Stream<Coffee> stream = list.stream().sorted();
         System.out.println("가격 오름차순 정렬");
         stream.forEach(System.out::println);
+
 
         //여기선 Coffee 타입의 객체에서 서로를비교할 수있는 기준이 없기 때문에 stream.sorted 로 정렬할 수없다.
         /* 이러한 문제를 해결하기 위해 Comparator 객체 또는  Comparable 인터페이스의 메서드를 정렬하려는 요소에 구현하여 사용할 수 있다.
@@ -127,9 +127,9 @@ public class Main {
 //
 //        System.out.println(stream);
 
-
-
-
+        List<Coffee>list3 = new ArrayList<>() ;
+        Map<Integer,Coffee> map=new HashMap<>();
+        Set<Coffee> set = new HashSet<>();
 
     }
 }
