@@ -2,16 +2,18 @@ package Collection.Set;
 import Collection.Coffee;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
+import java.util.stream.Stream;
 
-public class MenuSet {
+public class MenuSet extends HashSet<Coffee>{
     private Set<Coffee> set;
 
     // 생성자: 외부에서 Set을 주입받는 방식
 
 
     public MenuSet() {
-        this.set = new HashSet<>();
+        this.set =new HashSet<>();
     }
 
     // Set에 새로운 Coffee 객체를 추가
@@ -39,5 +41,18 @@ public class MenuSet {
     public boolean isMenuEmpty() {
         return set.isEmpty();
     }
+    public Stream<Coffee> stream() {
+        return set.stream();
+    }
 
+    @Override
+    public Iterator<Coffee> iterator() {
+        return set.iterator();
+    }
+    @Override
+    public String toString() {
+        return "MenuSet{" +
+                "set=" + set +
+                '}';
+    }
 }

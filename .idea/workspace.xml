@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="2.Collection arrayList stream Api 사용하여 정렬하기">
-      <change afterPath="$PROJECT_DIR$/src/Collection/Collection.Md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/List/정렬기능과 Comparator,Comparable인터페이스.MD" afterDir="false" />
+    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="3.Comparator,Comparable 설명 추가">
+      <change afterPath="$PROJECT_DIR$/src/Collection/Index/Collection래핑 클래스에 대하여.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collection/Wrapper/ControlledList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collection/Wrapper/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/List/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/List/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/List/MenuList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/List/MenuList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/List/Stream정렬기능과 Comparator,Comparable인터페이스.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Collection.Md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Index/Collection.Md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Map/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Map/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Set/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Set/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Set/MenuSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Set/MenuSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,32 +46,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Collection.List.Main.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Main.java",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Collection.List.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Collection.Set.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Collection.Wrapper.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Main.java&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Collection.List.Main">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\seohs\IdeaProjects\toyProject\Java_Study\src\Collection\Index" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Collection.Wrapper.Main">
     <configuration name="Collection.List.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collection.List.Main" />
       <module name="Java_Study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Collection.List.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collection.Set.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.Set.Main" />
+      <module name="Java_Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collection.Set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collection.Wrapper.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.Wrapper.Main" />
+      <module name="Java_Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collection.Wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,6 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Collection.Wrapper.Main" />
+        <item itemvalue="Application.Collection.Set.Main" />
         <item itemvalue="Application.Collection.List.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -116,7 +155,9 @@
       <workItem from="1719480298987" duration="2398000" />
       <workItem from="1719492760655" duration="151000" />
       <workItem from="1719493575242" duration="568000" />
-      <workItem from="1719634648163" duration="7098000" />
+      <workItem from="1719634648163" duration="13811000" />
+      <workItem from="1719891285238" duration="6857000" />
+      <workItem from="1719974283345" duration="4423000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -142,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719482046787</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3.Comparator,Comparable 설명 추가">
+      <option name="closed" value="true" />
+      <created>1719671152506</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719671152507</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +212,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="1.Collection 기초 List,Set/Map" />
     <MESSAGE value="2.Collection arrayList stream Api 사용하여 정렬하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.Collection arrayList stream Api 사용하여 정렬하기" />
+    <MESSAGE value="3.Comparator,Comparable 설명 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.Comparator,Comparable 설명 추가" />
   </component>
 </project>

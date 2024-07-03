@@ -56,11 +56,11 @@ public class Main {
         System.out.println("set:"+set);
         //set 은 객체저장순서를 보장하지않음
 
-        MenuSet coffeeSet= new MenuSet();
-        coffeeSet.addCoffee(coffee);
-        coffeeSet.addCoffee(coffee1);
-        coffeeSet.addCoffee(coffee2);
-        System.out.println(set);
+//        MenuSet coffeeSet= new MenuSet();
+//        coffeeSet.addCoffee(coffee);
+//        coffeeSet.addCoffee(coffee1);
+//        coffeeSet.addCoffee(coffee2);
+//        System.out.println(set);
         //[Coffee{name='아메리카노2'..생략}, Coffee{name='아메리카노',..생략}, Coffee{name='아메리카노1',..생략}]
 
 
