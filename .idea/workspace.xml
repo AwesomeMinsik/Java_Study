@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="3.Comparator,Comparable 설명 추가">
-      <change afterPath="$PROJECT_DIR$/src/Collection/Index/Collection래핑 클래스에 대하여.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/Wrapper/ControlledList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/Wrapper/Main.java" afterDir="false" />
+    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="4.일급컬렉션에 대하여">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Collection.Md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Index/Collection.Md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Map/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Map/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Set/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Set/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Set/MenuSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Set/MenuSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Index/일급 컬렉션(Collection래핑 클래스)에 대하여.MD" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Index/일급 컬렉션(Collection래핑 클래스)에 대하여.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +149,7 @@
       <workItem from="1719493575242" duration="568000" />
       <workItem from="1719634648163" duration="13811000" />
       <workItem from="1719891285238" duration="6857000" />
-      <workItem from="1719974283345" duration="4423000" />
+      <workItem from="1719974283345" duration="6163000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -191,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719671152507</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4.일급컬렉션에 대하여">
+      <option name="closed" value="true" />
+      <created>1719980581422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719980581423</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +213,7 @@
     <MESSAGE value="1.Collection 기초 List,Set/Map" />
     <MESSAGE value="2.Collection arrayList stream Api 사용하여 정렬하기" />
     <MESSAGE value="3.Comparator,Comparable 설명 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.Comparator,Comparable 설명 추가" />
+    <MESSAGE value="4.일급컬렉션에 대하여" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.일급컬렉션에 대하여" />
   </component>
 </project>
