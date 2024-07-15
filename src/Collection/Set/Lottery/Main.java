@@ -1,7 +1,9 @@
 package Collection.Set.Lottery;
 
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,10 +11,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         Lotto lotto = new Lotto();
-        int[] userLotto1 = lotto.autoLottery();
-        System.out.println(Arrays.toString(userLotto1));
-        int[] userLotto2 = lotto.userInput();
-        System.out.println(Arrays.toString(userLotto2));
+        LinkedHashSet<Integer> userLotto1 = lotto.autoLottery();
+        System.out.println(userLotto1);
+        Set<Integer> userLotto2 = lotto.userInput();
+        System.out.println(userLotto2);
 
     }
 }
