@@ -30,4 +30,30 @@ public class MenuMap {
                 "map=" + map +
                 '}';
     }
+
+
+    //    public int[] autoLottery(){
+//        for(int i = 0 ; i <6 ; i++){
+//            this.lottoNumbers[i]= (int) (Math.random() * (maxValue - minValue));
+//        }
+//        return lottoNumbers;
+//    }
+//
+//    public int[] userInput(){
+//        Scanner scanner = new Scanner(System.in);
+//        for(int i = 0 ; i <6 ; i++){
+//            this.lottoNumbers[i]=scanner.nextInt();
+//        }
+//        return lottoNumbers;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Lotto{" +
+//                "lottoNumbers=" + Arrays.toString(lottoNumbers) +
+//                ", minValue=" + minValue +
+//                ", maxValue=" + maxValue +
+//                '}';
+//    }
+//}
 }

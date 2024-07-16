@@ -10,38 +10,15 @@ public class Lotto {
     //로또 숫자 중복제거로 LinkedHashSet 사용할 수 있을 거같음.
 
     private final LinkedHashSet<Integer> lottoNumbers;
+    public final LinkedHashSet<Integer> winningNumbers;
+
     private final double minValue = 1;
     private final double maxValue = 45;
 
     public Lotto() {
+        this.winningNumbers =  new LinkedHashSet<Integer>(6);
         this.lottoNumbers = new LinkedHashSet<Integer>(6);
     }
-
-
-    //    public int[] autoLottery(){
-//        for(int i = 0 ; i <6 ; i++){
-//            this.lottoNumbers[i]= (int) (Math.random() * (maxValue - minValue));
-//        }
-//        return lottoNumbers;
-//    }
-//
-//    public int[] userInput(){
-//        Scanner scanner = new Scanner(System.in);
-//        for(int i = 0 ; i <6 ; i++){
-//            this.lottoNumbers[i]=scanner.nextInt();
-//        }
-//        return lottoNumbers;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Lotto{" +
-//                "lottoNumbers=" + Arrays.toString(lottoNumbers) +
-//                ", minValue=" + minValue +
-//                ", maxValue=" + maxValue +
-//                '}';
-//    }
-//}
     public LinkedHashSet<Integer> autoLottery() {
         lottoNumbers.clear();
         while (lottoNumbers.size() < 6) {
@@ -51,20 +28,30 @@ public class Lotto {
         return lottoNumbers;
     }
 
-    public LinkedHashSet<Integer> userInput() {
-        Scanner scanner = new Scanner(System.in);
-        lottoNumbers.clear();
-        while (lottoNumbers.size() < 6) {
-            System.out.println("Enter a number between " + minValue + " and " + maxValue + ": ");
-            int number = scanner.nextInt();
-            if (number >= minValue && number <= maxValue) {
-                lottoNumbers.add(number);
-            } else {
-                System.out.println("Number out of range. Please try again.");
-            }
+    public LinkedHashSet<Integer> getWinningNumbers(){
+        winningNumbers.clear();
+        while (winningNumbers.size() < 6) {
+            int number = (int) (Math.random() * (maxValue - minValue) + minValue);
+            winningNumbers.add(number);
         }
-        return lottoNumbers;
+        return winningNumbers;
     }
+
+
+//    public LinkedHashSet<Integer> userInput() {
+//        Scanner scanner = new Scanner(System.in);
+//        lottoNumbers.clear();
+//        while (lottoNumbers.size() < 6) {
+//            System.out.println("숫자를 입력해주세요" + minValue + " ~ " + maxValue);
+//            int number = scanner.nextInt();
+//            if (number >= minValue && number <= maxValue) {
+//                lottoNumbers.add(number);
+//            } else {
+//                System.out.println("입력값이 범위를 초과헀습니다.");
+//            }
+//        }
+//        return lottoNumbers;
+//    }
 
     @Override
     public String toString() {
