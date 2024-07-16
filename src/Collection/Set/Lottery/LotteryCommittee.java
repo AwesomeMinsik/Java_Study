@@ -1,6 +1,7 @@
 package Collection.Set.Lottery;
 
 import java.util.LinkedHashSet;
+import java.util.List;
 
 public class LotteryCommittee {
 
@@ -18,5 +19,16 @@ public class LotteryCommittee {
             winningNumbers.add(number);
         }
         return winningNumbers;
+    }
+
+    private void sortingLottoNumbers(){
+
+    }
+    public void calculationLotteryList(List<LinkedHashSet<Integer>> lottoList){
+        int i = 1;
+        for (LinkedHashSet<Integer> ticket : lottoList) {
+            System.out.println("Ticket " + i + ": " + ticket);
+            i++;
+        }
     }
 }
