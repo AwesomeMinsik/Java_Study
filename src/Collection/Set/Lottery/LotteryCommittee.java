@@ -1,7 +1,9 @@
 package Collection.Set.Lottery;
 
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.TreeSet;
 
 public class LotteryCommittee {
 
@@ -24,11 +26,23 @@ public class LotteryCommittee {
     private void sortingLottoNumbers(){
 
     }
-    public void calculationLotteryList(List<LinkedHashSet<Integer>> lottoList){
+
+    public void calculationLotteryList(List<LinkedHashSet<Integer>> lottoList) {
         int i = 1;
         for (LinkedHashSet<Integer> ticket : lottoList) {
-            System.out.println("Ticket " + i + ": " + ticket);
+            System.out.println("Ticket " + i + ": " + new TreeSet<>(ticket));
             i++;
         }
     }
+
+//    public List<TreeSet<Integer>> calculationLotteryList(List<LinkedHashSet<Integer>> lottoList) {
+//        List<TreeSet<Integer>> sortedLottoList = new ArrayList<>();
+//
+//        for (LinkedHashSet<Integer> ticket : lottoList) {
+//            sortedLottoList.add(new TreeSet<>(ticket));
+//        }
+//
+//        return sortedLottoList;
+//    }
+
 }
