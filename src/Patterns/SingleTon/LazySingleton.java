@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.SingleTon;
 
 public class LazySingleton {
     // 인스턴스를 정적 필드로 선언 (초기화는 하지 않음)

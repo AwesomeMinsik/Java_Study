@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.SingleTon;
 
 public class EagerSingleton {
     private static final EagerSingleton instance = new EagerSingleton();
