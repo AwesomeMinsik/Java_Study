@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="5.컬렉션 프레임워크 자료구조 데이터 순회방식 정리중">
-      <change afterPath="$PROJECT_DIR$/src/Collection/Set/Lottery/Lotto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collection/Set/Lottery/Main.java" afterDir="false" />
+    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="11. DesignPattern/싱글톤 패턴 예제클래스">
+      <change afterPath="$PROJECT_DIR$/src/Patterns/Factory/팩토리 메서드 패턴.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +41,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Collection.List.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Collection.Set.Lottery.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Collection.Set.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Collection.Wrapper.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
@@ -50,6 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Collection/Set/Lottery&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,17 +63,33 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\seohs\IdeaProjects\toyProject\Java_Study\src\Collection\Set\Lottery" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\seohs\IdeaProjects\toyProject\Java_Study\src\Collection\Index" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.generic.Main">
+  <component name="RunManager" selected="Application.Collection.Set.Lottery.Main">
     <configuration name="Collection.List.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collection.List.Main" />
       <module name="Java_Study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Collection.List.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collection.Set.Lottery.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.Set.Lottery.Main" />
+      <module name="Java_Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collection.Set.Lottery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,19 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.Main" />
-      <module name="Java_Study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Collection.List.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="generic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generic.Main" />
       <module name="Java_Study" />
@@ -134,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Collection.Set.Lottery.Main" />
         <item itemvalue="Application.generic.Main" />
         <item itemvalue="Application.Collection.Wrapper.Main" />
         <item itemvalue="Application.Collection.Set.Main" />
         <item itemvalue="Application.Collection.List.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +177,14 @@
       <workItem from="1720670443738" duration="5000" />
       <workItem from="1720859025144" duration="34000" />
       <workItem from="1720859070482" duration="15000" />
-      <workItem from="1720859096907" duration="2000" />
+      <workItem from="1720859096907" duration="856000" />
+      <workItem from="1720975138617" duration="256000" />
+      <workItem from="1721043686052" duration="2847000" />
+      <workItem from="1721136010658" duration="9936000" />
+      <workItem from="1721639043206" duration="1163000" />
+      <workItem from="1721657250542" duration="99000" />
+      <workItem from="1721657469873" duration="134000" />
+      <workItem from="1721739552242" duration="233000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -231,7 +242,55 @@
       <option name="project" value="LOCAL" />
       <updated>1720522330943</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="6.Set 자료구조 준비 예제 작성 LinkedHashSet 추가 예정">
+      <option name="closed" value="true" />
+      <created>1720859142463</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720859142463</updated>
+    </task>
+    <task id="LOCAL-00009" summary="7.Lottery 자료구조 LinkedHashSet 으로 변경">
+      <option name="closed" value="true" />
+      <created>1721044778045</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721044778045</updated>
+    </task>
+    <task id="LOCAL-00010" summary="7. 로또 당첨번호 추가 및 로또 당첨순위 구가중">
+      <option name="closed" value="true" />
+      <created>1721136929039</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721136929039</updated>
+    </task>
+    <task id="LOCAL-00011" summary="9. 로또 여러장 출력추가및 코드 리팩토링">
+      <option name="closed" value="true" />
+      <created>1721148097668</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721148097668</updated>
+    </task>
+    <task id="LOCAL-00012" summary="10.로또 번호 정렬 TreeSet 추가">
+      <option name="closed" value="true" />
+      <created>1721230280958</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721230280958</updated>
+    </task>
+    <task id="LOCAL-00013" summary="11. DesignPattern/싱글톤 패턴 예제클래스">
+      <option name="closed" value="true" />
+      <created>1721639298350</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721639298350</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +315,12 @@
     <MESSAGE value="4.일급컬렉션에 대하여" />
     <MESSAGE value="4.일급컬렉션에 대하여 (설명추가)" />
     <MESSAGE value="5.컬렉션 프레임워크 자료구조 데이터 순회방식 정리중" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.컬렉션 프레임워크 자료구조 데이터 순회방식 정리중" />
+    <MESSAGE value="6.Set 자료구조 준비 예제 작성 LinkedHashSet 추가 예정" />
+    <MESSAGE value="7.Lottery 자료구조 LinkedHashSet 으로 변경" />
+    <MESSAGE value="7. 로또 당첨번호 추가 및 로또 당첨순위 구가중" />
+    <MESSAGE value="9. 로또 여러장 출력추가및 코드 리팩토링" />
+    <MESSAGE value="10.로또 번호 정렬 TreeSet 추가" />
+    <MESSAGE value="11. DesignPattern/싱글톤 패턴 예제클래스" />
+    <option name="LAST_COMMIT_MESSAGE" value="11. DesignPattern/싱글톤 패턴 예제클래스" />
   </component>
 </project>
