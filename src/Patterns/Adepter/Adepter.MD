@@ -28,7 +28,8 @@ public interface Shape {
 }
 
 ```
-
+Shape 인터페이스는 클라이언트가 사용하려고 하는 인터페이스로,
+도형을 그리는 draw 메서드를 정의한다.
 ```java
 
 public class Rectangle {
@@ -38,7 +39,9 @@ public class Rectangle {
 }
 
 ```
-
+Rectangle 클래스는 기존 클래스이며,
+drawRectangle 메서드를 통해 사각형을 그리는 기능을 제공한다.
+하지만 Shape 인터페이스와는 호환되지 않는다.
 ```java
 
 public class RectangleAdapter implements Shape {
@@ -54,7 +57,9 @@ public class RectangleAdapter implements Shape {
     }
 }
 ```
-
+RectangleAdapter 클래스는 어댑터 역할을 한다. 
+이 클래스는 Shape 인터페이스를 구현하며, 내부에 Rectangle 객체를 가지고 있다.
+draw 메서드를 호출하면 내부의 rectangle.drawRectangle() 메서드를 호출하여 Rectangle 객체의 기능을 사용한다.
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -66,9 +71,10 @@ public class Main {
     }
 }
 ```
+Main 클래스에서는 Rectangle 객체를 생성하고,
+이를 RectangleAdapter를 통해 Shape 인터페이스로 변환하여 사용한다. 
+rectAdapter.draw()를 호출하면, 실제로는 Rectangle 객체의 drawRectangle 메서드가 호출된다.
 
-예제에서는 Shape 인터페이스와 Rectangle 클래스가
-호환되지 않는 인터페이스를 가지고 있지만, 
-
-어댑터 패턴을 통해 Rectangle 클래스의 기능을 
-Shape 인터페이스로 변환하여 사용할 수 있다.
+예제에서는 Shape 인터페이스와 Rectangle 클래스가 호환되지 않는 인터페이스를 가지고 있지만, 
+어댑터 패턴을 통해 Rectangle 클래스의 기능을 Shape 인터페이스로 변환하여 사용할 수 있으며, 
+이를 통해 클라이언트는 Shape 인터페이스만 알고 있어도 Rectangle 객체를 사용할 수 있다.
