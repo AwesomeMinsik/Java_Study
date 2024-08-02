@@ -29,11 +29,24 @@ public class Main {
                         System.out.println("기호 " + (i + 1) + "번: " + candidates[i]);
                 }
 
+                int votesPerPercent = numberOfVotes / 100;
                 for (int i = 0; i < numberOfVotes; i++) {
-                        int randomVote = random.nextInt(numberOfCandidates);
+                        int randomVote = random.nextInt(numberOfCandidates);  // 후보자 선택
                         voteCounts[randomVote]++;
-                        int randomNumber = random.nextInt(10000) + 1;
+                        int randomNumber = random.nextInt(10000) + 1;  // 1에서 10000 사이의 임의 번호
                         System.out.println("투표 " + (i + 1) + ": 기호 " + (randomVote + 1) + "번 후보자 (" + candidates[randomVote] + ") - 투표 번호: " + randomNumber);
+
+                        // 1% 단위로 진행 상황 출력
+                        if ((i + 1) % votesPerPercent == 0) {
+                                int progressPercentage = (int) (((double) (i + 1) / numberOfVotes) * 100);
+                                System.out.println("현재 진행률: " + progressPercentage + "%");
+
+                                try {
+                                        Thread.sleep(200);  // 0.2초 대기
+                                } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                }
+                        }
                 }
 
                 System.out.println("\n투표 결과:");
