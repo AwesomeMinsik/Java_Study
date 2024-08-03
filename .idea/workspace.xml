@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="13. DesignPattern/어뎁터 패턴 클래스,Adpeter.MD 추가">
-      <change afterPath="$PROJECT_DIR$/src/Patterns/Factory/ConcreteJudgeFactory.java" afterDir="false" />
+    <list default="true" id="e82003ee-fd16-4e3c-b511-2e08a83be344" name="Changes" comment="14-1 선거투표 프로그램과제 랜덤투표 추가">
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/AbstractFactoryPattern.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/Chair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/ClassicChair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/ClassicFurnitureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/ClassicTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/FurnitureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/ModernChair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/ModernFurnitureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/ModernTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Patterns/abstractFactory/Table.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patterns/Factory/JudgeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns/Factory/JudgeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patterns/Factory/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns/Factory/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patterns/Factory/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns/Factory/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Patterns/Factory/팩토리 메서드 패턴.MD" beforeDir="false" afterPath="$PROJECT_DIR$/src/Patterns/Factory/팩토리 메서드 패턴.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +49,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Collection.List.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Collection.Set.Lottery.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Collection.Set.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Collection.Wrapper.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.generic.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Collection/Set/Lottery&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Main.java&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Collection.List.Main.executor": "Run",
+    "Application.Collection.Set.Lottery.Main.executor": "Run",
+    "Application.Collection.Set.Main.executor": "Run",
+    "Application.Collection.Wrapper.Main.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Patterns.abstractFactory.Main.executor": "Run",
+    "Application.generic.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Collection/Set/Lottery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/seohs/IdeaProjects/toyProject/Java_Study/src/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\seohs\IdeaProjects\toyProject\Java_Study\src\Collection\Set\Lottery" />
@@ -75,20 +82,7 @@
       <recent name="C:\Users\seohs\IdeaProjects\toyProject\Java_Study\src\Collection\Index" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Collection.Set.Lottery.Main">
-    <configuration name="Collection.List.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.List.Main" />
-      <module name="Java_Study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Collection.List.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Patterns.abstractFactory.Main">
     <configuration name="Collection.Set.Lottery.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Collection.Set.Lottery.Main" />
       <module name="Java_Study" />
@@ -102,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Collection.Set.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.Set.Main" />
+    <configuration name="Collection.Wrapper.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.Wrapper.Main" />
       <module name="Java_Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collection.Set.*" />
+          <option name="PATTERN" value="Collection.Wrapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +109,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Collection.Wrapper.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collection.Wrapper.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="voteMamagemants.Main" />
       <module name="Java_Study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collection.Wrapper.*" />
+          <option name="PATTERN" value="voteMamagemants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Patterns.abstractFactory.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Patterns.abstractFactory.Main" />
+      <module name="Java_Study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Patterns.abstractFactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Patterns.abstractFactory.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Collection.Set.Lottery.Main" />
         <item itemvalue="Application.generic.Main" />
         <item itemvalue="Application.Collection.Wrapper.Main" />
-        <item itemvalue="Application.Collection.Set.Main" />
-        <item itemvalue="Application.Collection.List.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +196,16 @@
       <workItem from="1721639043206" duration="1163000" />
       <workItem from="1721657250542" duration="99000" />
       <workItem from="1721657469873" duration="134000" />
-      <workItem from="1721739552242" duration="4322000" />
+      <workItem from="1721739552242" duration="5216000" />
+      <workItem from="1722245562015" duration="27000" />
+      <workItem from="1722249199963" duration="644000" />
+      <workItem from="1722319773732" duration="635000" />
+      <workItem from="1722321807668" duration="113000" />
+      <workItem from="1722431084003" duration="5000" />
+      <workItem from="1722432553285" duration="4000" />
+      <workItem from="1722432978766" duration="20000" />
+      <workItem from="1722433300185" duration="2263000" />
+      <workItem from="1722678514997" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -327,7 +343,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721907429455</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="14. DesignPattern/Adpeter.MD 설명추가, Factory method 설명추가">
+      <option name="closed" value="true" />
+      <created>1721908645752</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721908645752</updated>
+    </task>
+    <task id="LOCAL-00019" summary="14-1 선거투표 프로그램과제">
+      <option name="closed" value="true" />
+      <created>1722433417778</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722433417778</updated>
+    </task>
+    <task id="LOCAL-00020" summary="14-1 선거투표 프로그램과제 랜덤투표 추가">
+      <option name="closed" value="true" />
+      <created>1722582996330</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722582996330</updated>
+    </task>
+    <task id="LOCAL-00021" summary="14-1 선거투표 프로그램과제 랜덤투표 추가">
+      <option name="closed" value="true" />
+      <created>1722583408612</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722583408612</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +409,9 @@
     <MESSAGE value="12. DesignPattern/팩토리 메서드 패턴.MD 추가" />
     <MESSAGE value="12. DesignPattern/싱글톤 패턴.MD 추가" />
     <MESSAGE value="13. DesignPattern/어뎁터 패턴 클래스,Adpeter.MD 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="13. DesignPattern/어뎁터 패턴 클래스,Adpeter.MD 추가" />
+    <MESSAGE value="14. DesignPattern/Adpeter.MD 설명추가, Factory method 설명추가" />
+    <MESSAGE value="14-1 선거투표 프로그램과제" />
+    <MESSAGE value="14-1 선거투표 프로그램과제 랜덤투표 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-1 선거투표 프로그램과제 랜덤투표 추가" />
   </component>
 </project>
